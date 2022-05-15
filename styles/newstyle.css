@@ -1,0 +1,15 @@
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 20px);
+} 
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px #fffff;
+  transition: transform 150ms;
+}
+.avatar:hover ~ .avatar {
+  transform: translateX(15px);
+}
